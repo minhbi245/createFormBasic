@@ -1,0 +1,80 @@
+body {
+    background: greenyellow;
+}
+h1 {
+    text-align: center;
+}
+.form-div {
+    background: #8e6d6d;
+    display: grid;
+    width: 100%;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "desc desc desc"
+        "name-label name-input ."
+        "email-label email-input ."
+        "number-label number-input ."
+        "dropdown-desc dropdown ."
+        "radio-label radio ."
+        "service-desc service ."
+        "comments-desc comments ."
+        ". submit .";
+}
+
+#description {
+    grid-area: desc;
+    text-align: center;
+}
+.name-input-div {
+    grid-area: name-input;
+}
+.name-label-div {
+    grid-area: name-label;
+    text-align: right
+}
+.email-input-div {
+    grid-area: email-input;
+}
+.email-label-div {
+    grid-area: email-label;
+    text-align: right;
+}
+.number-input-div {
+    grid-area: number-input;
+}
+.number-label-div {
+    grid-area: number-label;
+    text-align: right;
+}
+.dropdown-menu {
+    grid-area: dropdown;
+}
+.dropdown-label {
+    grid-area: dropdown-desc;
+    text-align: right;
+}
+.rate-label {
+    grid-area: radio-label;
+    text-align: right;
+}
+.rating-radio {
+    grid-area: radio;
+}
+.service-check {
+    grid-area: service;
+}
+.service-desc {
+    grid-area: service-desc;
+    text-align: right;
+}
+.comments {
+    grid-area: comments;
+}
+.comments-desc {
+    grid-area: comments-desc;
+    text-align: right;
+}
+.submit-button {
+    grid-area: submit;
+    

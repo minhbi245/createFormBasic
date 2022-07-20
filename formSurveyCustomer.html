@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./surveyCss.css">
+    </head>
+
+    <body>
+        <h1 id="title">
+            Guest Satisfaction Survey
+        </h1>  
+        
+        <form id="survey-form">
+            
+            <div class="form-div">
+                <p id="description">
+                Please tell us about your stay!
+                </p>
+                
+                <div class="name-input-div">
+                    <input id="name" type="text" placeholder="Name" required>
+                </div>
+                
+                <div class="email-input-div">
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+                
+                <div class="number-input-div">  
+                    <input id="number" type="number" min="1" max="200" placeholder="Age">
+                </div>
+            
+                <div class="name-label-div">
+                    <label id="name-label">Name</label>
+                </div>
+                <div class="email-label-div">
+                    <label id="email-label">Email</label>
+                </div>
+                <div class="number-label-div">
+                    <label id="number-label">Age</label>
+                </div>
+            
+                <div class="dropdown-menu">
+                    <select id="dropdown">
+                        <option>Business Meeting</option>
+                        <option>Conference</option>
+                        <option>Vacation</option>
+                        <option>Staycation</option>
+                    </select>
+                </div>
+            
+                <div class="dropdown-label">
+                For what reason were you in town?
+                </div>
+            
+                <div class="rating-radio">
+                    <label for="1">
+                        <input name="rating" type="radio" value="1">1
+                    </label>
+                    <label for="2" value="2">
+                        <input name="rating" type="radio" value="2">2
+                    </label>
+                    <label for="3" value="3">
+                        <input name="rating" type="radio" value="3">3
+                    </label>
+                    <label>
+                        <input name="rating" type="radio" value="4">4
+                    </label>
+                    <label for="5">
+                        <input name="rating" type="radio" checked value="5">5
+                    </label>
+                </div>
+                
+                <div class="rate-label">
+                    Please rate your stay on a scale of 1 - 5, with 1 being terrible and 5 being amazing.
+                </div>
+                
+                <div class="service-check">
+                    <ul id="checkbox-list" style="list-style: none;">
+                        <li class=checkbox>
+                            <label for="Early-Check-In">
+                                <input name="service" type="checkbox" value="early-check-in">Early Check-In
+                            </label>
+                        </li>
+                    
+                        <li class="checkbox">
+                            <label for="Room-Service">
+                                <input name="service" type="checkbox" value="room-service">Room Service
+                            </label>
+                        </li>
+                        
+                        <li class="checkbox">
+                            <label for="Local-Shuttle">
+                                <input name="service" type="checkbox" value="local-shuttle">Local Shuttle
+                            </label>
+                        </li>
+                        
+                        <li class="checkbox">
+                            <label for="Rooftop-Bar">
+                                <input name="service" type="checkbox" value="rooftop-bar">Rooftop Bar
+                            </label>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="service-desc">
+                        Which of these services, if any, did you utilize and enjoy during your stay?
+                </div>
+                  
+                <div class="comments">
+                    <textarea name="comments" rows="10" cols="50"></textarea>
+                </div>
+                
+                <div class="comments-desc">
+                    Any further comments? Please share your thoughts here!
+                </div>
+                
+                <div class="submit-button">
+                    <input type="submit" id="submit">
+                </div>
+            </div>
+        </form>    
+    </body>
+</html>
